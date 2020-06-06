@@ -40,11 +40,12 @@ int main(int argc, char *argv[])
 		do
 		{
 
-		cout << ""====================================================="" << endl;		std::cout << "1. Carregar Dades del fitxer/per defecte" << std::endl;
+		cout << "=====================================================" << endl;		
+		std::cout << "1. Carregar Dades del fitxer/per defecte" << std::endl;
 		std::cout << "2. Introduir panell nou" << std::endl;
 		std::cout << "3. Mostrar panells" << std::endl;
 		std::cout << "0. Tornar" << std::endl;
-		cout << "=====================================================" << endl;		
+		cout << "====================================================="<< endl;		
 		std::cin >> panel;
 
 		switch (panel)
@@ -53,10 +54,13 @@ int main(int argc, char *argv[])
 
 		dpanel(valor, frase);
 
+
 			break;
 		case 2:
+		npanel(valor, frase);
 			break;
-		case 3: 
+		case 3:
+			mpanel(valor, frase);
 			break;
 	
 		}

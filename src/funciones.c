@@ -39,7 +39,10 @@ std::cout << "Saldo actual:" << concursante.dinero <<"€" <<std::endl;
 void dpanel(int valor, int frase){
 
 
-std::cout << "|" << spanel[0]<< panel[1] <<"|" <<std::endl;
+std::cout << "Modulo base cargado fixeros omitidos..." << std::endl;
+
+
+
 
 };
 

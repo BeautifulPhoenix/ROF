@@ -28,5 +28,14 @@ cin >> concursante.edat;
 std::cout << "Saldo actual:" << concursante.dinero <<"€" <<std::endl;
 
 
-return 0;
-}
+};
+
+int dpanel(int valor, int frase){
+
+string panel[100]= {"5", "hola", "2.7", "8,9", "adios"};
+
+std::cout << "SSSS" << panel<< std::endl;
+
+};
+
+

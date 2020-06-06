@@ -1,7 +1,21 @@
 {
     "cSpell.words": [
+        "char",
+        "datospanel",
+        "frase",
+        "int",
+        "int datospanel valor char frase",
         "jugador",
         "struct",
-        "struct jugador"
+        "struct jugador",
+        "valor"
+    ],
+    "cSpell.ignoreWords": [
+        "char",
+        "datospanel",
+        "frase",
+        "int",
+        "int datospanel valor char frase",
+        "valor"
     ]
 }

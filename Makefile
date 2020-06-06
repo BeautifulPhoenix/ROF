@@ -8,8 +8,8 @@ LIB		:= lib
 
 LIBRARIES	:=
 
-ifeq ($(OS),Windows_NT)
-EXECUTABLE	:= main.exe
+ifeq ($(OS),Kali Linux)
+EXECUTABLE	:= main
 SOURCEDIRS	:= $(SRC)
 INCLUDEDIRS	:= $(INCLUDE)
 LIBDIRS		:= $(LIB)

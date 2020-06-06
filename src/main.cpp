@@ -51,9 +51,10 @@ int main(int argc, char *argv[])
 		std::cout << "1. Carregar Dades del fitxer/per defecte" << std::endl;
 		std::cout << "2. Introduir panell nou" << std::endl;
 		std::cout << "3. Mostrar panells" << std::endl;
-		std::cout << "4. Tornar" << std::endl;
+		std::cout << "0. Tornar" << std::endl;
+		std::cin >> panel;
 
-		switch (panel2)
+		switch (panel)
 		{
 		case 1:
 			break;
@@ -61,9 +62,9 @@ int main(int argc, char *argv[])
 			break;
 		case 3: 
 			break;
-		case 4:
-			break;
+	
 		}
+
 		} while(panel !=0);
 
 		

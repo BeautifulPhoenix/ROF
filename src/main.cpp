@@ -9,21 +9,17 @@ struct Panel
 	int valor;
 	int Pos;
 };
-struct Jugador
+struct concursante
 {
-	char valor;
-	int cuantitat;
+	char nom[15];
+	int dinero;
 };
-struct Jugador Jugador[10];
 
-int main(int argc, char *argv[])
+int main()
 {
 	int choise;
 	int panel;
-	int panel2;
-	int var = 0;
-	int lleno = 0;
-	char ruleta [12][1];
+	//char ruleta [12][1];
 	do
 	{
 
@@ -35,6 +31,8 @@ int main(int argc, char *argv[])
 		std::cout << "0. Salir" << std::endl;
 		std::cin >> choise;
 
+
+		 
 		switch (choise)
 		{
 		case 1:

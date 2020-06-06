@@ -1,3 +1,3 @@
 using namespace std;
 
-int menu(int argc, char *argv[]);
+int concursante(int argc, char *argv[]);

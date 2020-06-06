@@ -9,17 +9,14 @@ struct Panel
 	int valor;
 	int Pos;
 };
-struct concursante
-{
-	char nom[15];
-	int dinero;
-};
 
-int main()
+
+int main(int argc, char *argv[])
 {
 	int choise;
 	int panel;
 	//char ruleta [12][1];
+	
 	do
 	{
 
@@ -36,8 +33,8 @@ int main()
 		switch (choise)
 		{
 		case 1:
-		
-		
+
+		concursante(argc, argv);		
         break;
 
 		case 2:

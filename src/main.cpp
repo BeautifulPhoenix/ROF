@@ -5,6 +5,7 @@
 #include "funciones.c"
 #include "funcions.h"
 
+
 int valor;
 int frase;
 

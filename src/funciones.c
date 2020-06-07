@@ -99,7 +99,7 @@ srand(time(NULL));
 int num = rand() % 28;   
 std::cout << "Bienvenido a la Ruleta de la Suerte " <<std::endl;
 
-std::cout << " s"<< num << std::endl;
+std::cout << ""<< num << std::endl;
 
 
 

@@ -6,12 +6,14 @@
 #include <string>
 
 using namespace std;
+
 string panel[15];
 string spanel[2]= {"La Situacion desesperada de estar encerrado ", "El deseo de romper las cadenas y ser liberado"};
+string ruleta [28][1]= {"25€", "50€", "75€", "25€", "50€", "75€", "25€", "50€", "75€", "25€", "50€", "75€", "25€", "50€", "75€", "25€", "50€", "75€", "100€", "150€", "200€", "100€", "150€", "Bancarrota", "Comodin", "Todas las vocales", "X2", "1/2"};
+srand(time(NULL));
+char num = rand() % 28;    
 
 
-
-int concursante(int argc, char *argv[]){
 
 struct concursante
 {
@@ -19,6 +21,11 @@ struct concursante
 	int dinero;
     int edat;
 };
+
+
+int concursante(int argc, char *argv[]){
+
+
 
 struct concursante concursante;
 
@@ -82,3 +89,14 @@ int npanel(int valor, int frase){
         
     }
 };
+
+
+int partida (int valor, int frase){
+
+std::cout << "Bienvenido a la Ruleta de la Suerte " <<std::endl;
+
+std::cout << " s"<< num << std::endl;
+
+
+
+}

@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
 {
 	int choise;
 	int panel;
-	//char ruleta [12][1];
 	
 	do
 	{
@@ -71,6 +70,8 @@ int main(int argc, char *argv[])
         break;
 
 		case 3:
+
+		partida (valor, frase);
 		
         
 		break;

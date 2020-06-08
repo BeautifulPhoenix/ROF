@@ -178,16 +178,24 @@ int partida(int valor, int frase){
     std::cout << " Te a tocado: " << ruleta[num][1] << std::endl;
 do
 {
+      if (num == 22)
+    {
+        choise==0;
+    }
+    
 
     cout <<"Que quieres hacer?"<< endl;
         
+  
         
         cout<<"====================================================="<<endl;
         std::cout << "1. Volver a girar Ruleta" << std::endl;
 		std::cout << "2. Comprar letras" << std::endl;
-		std::cout << "3. Todas las Vocales" << std::endl;
-		std::cout << "4. Usar Comodin" << std::endl;
+		std::cout << "3. Comprobar Respuesta" <<endl;
+        std::cout << "4. Todas las Vocales" << std::endl;
+		std::cout << "5. Usar Comodin" << std::endl;
 		std::cout << "0. Bancarrota" << std::endl;
+        
 		cout<<"====================================================="<<endl;
 		std::cin >> choise;
         switch (choise)
@@ -210,37 +218,21 @@ int i;
         cin >> solucion[i];
        //std::getline(std::cin, solucion[1]);
 
-       cout << " " << i;
+       cout << " v" << i;
+    
+           
+       // cout <<"Panel: "<< spanel[i] <<endl;
+        cout << "Panel:" <<endl;
+         cout << "  _ _ _ _ _ _ _ _ _ _ _ _ _ _"<<endl;
+        //cout <<"Solucion:  "<< solucion[i] <<endl;
 
        i=i+1;
 
-
-        for (size_t y = 0; y < 15; y++)
-        {
-
-        if ((solucion[y].compare(spanel[y])) == 0)
-        {
-
-                cout << " Has hacertado la letra" <<endl;
-
-        }        }
-        
-
-
-
-        /*if ((solucion[1].compare(spanel[dado])) <0)
-        {
-                cout << "Te has equibocado has perdido GAME OVER" <<endl;
-
-        }*/
-        
-        cout <<solucion[i] << endl;
-
     
-    for (size_t i = 0; i < 30; i++)
+    for (size_t y= 0; y< 30; y++)
     {
 
-        cout << " "<< solucion[i]; 
+        cout << " "<< solucion[y]; 
 
     }
     
@@ -256,6 +248,26 @@ int i;
             break;
         
         case 3:
+
+ /*               for (size_t y = 0; y < 15; y++)
+        {
+
+        if ((solucion[y].compare(spanel[y])) == 0)
+        {
+
+                cout << " Has hacertado la frase" <<endl;
+
+        }       } */
+        
+
+
+
+        if ((solucion[1].compare(spanel[1])) <0)
+        {
+                cout << "Te has equibocado has perdido GAME OVER" <<endl;
+
+        }
+
             break;
         
         case 4:

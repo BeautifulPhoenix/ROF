@@ -13,6 +13,9 @@ int main(int argc, char *argv[])
 {
 	int choise;
 	int panel;
+
+	srand(time(NULL));
+
 	
 	do
 	{

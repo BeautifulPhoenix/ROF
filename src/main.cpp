@@ -75,12 +75,14 @@ int main(int argc, char *argv[])
 
 		case 3:
 
-		partida (valor, frase);
+		ipartida (valor, frase);
 		
         
 		break;
 
 		case 4:
+
+		partida (valor, frase);
 
 			
         break;

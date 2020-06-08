@@ -13,7 +13,8 @@ string panel[15];
 string rpanel[2]={"Estoy encerrado ",};
 string spanel[30]={"E","S", "T", "O", "Y", "E", "N", "C","E", "R", "R", "A", "D","O"};
 string Pista [2]={"Confinamiento"};
-string ruleta [28][1]= {"25€", "50€", "75€", "25€", "50€", "75€", "25€", "50€", "75€", "25€", "50€", "75€", "25€", "50€", "75€", "25€", "50€", "75€", "100€", "150€", "200€", "100€", "150€", "Bancarrota", "Comodin", "Todas las vocales", "X2", "1/2"};
+string ruleta [28][1]= {"25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "100", "150", "200", "100", "150", "Bancarrota", "Comodin", "Todas las vocales", "X2", "1/2"};
+string ruleta2 [28]{"25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "100", "150", "200", "100", "150"};
 string solucion [30];
 //string ruleta [28][1];
 int num = rand() % 28; 
@@ -21,13 +22,14 @@ int choise;
 int dado= rand() % 2;
 int i;
 string cp;
+int eur;
 
 
 
 struct concursante
 {
 	char nom[15];
-	char dinero=0;
+	int dinero=0;
     int edat;
 };
 
@@ -174,12 +176,12 @@ int partida(int valor, int frase){
     std::cout << " "<< Pista[dado] << std::endl;
 
 
-    num = rand() % 28; 
+   /* num = rand() % 28; 
 
     std::cout << "Giras la Ruleta" << std::endl;
     //int c = getchar();
     std::cout << "...... te a tocado la posicion: " << num<< std::endl;
-    std::cout << " Te a tocado: " << ruleta[num][1] << std::endl;
+    std::cout << " Te a tocado: " << ruleta[num][1] <<"€"<< std::endl;*/
 do
 {
       if (num == 22)
@@ -193,7 +195,7 @@ do
   
         
         cout<<"====================================================="<<endl;
-        std::cout << "1. Volver a girar Ruleta" << std::endl;
+        std::cout << "1. Girar Ruleta" << std::endl;
 		std::cout << "2. Comprar letras" << std::endl;
 		std::cout << "3. Comprobar Respuesta" <<endl;
         std::cout << "4. Todas las Vocales" << std::endl;
@@ -202,7 +204,7 @@ do
         
 		cout<<"====================================================="<<endl;
                // cout <<"Panel: "<< spanel[i] <<endl;
-        cout << "Saldo: "<< concursante.dinero <<endl;
+        cout << "Saldo: "<< concursante.dinero << eur<<"€"<<endl;
         cout << "Pista: "<< Pista[0] <<endl;
         cout << "Panel:" <<endl;
          cout << "  _ _ _ _ _ _ _ _ _ _ _ _ _ _"<<endl;
@@ -229,11 +231,11 @@ do
     std::cout << "Giras la Ruleta" << std::endl;
     //int c = getchar();
     std::cout << "...... te a tocado la posicion: " << num<< std::endl;
-    std::cout << " Te a tocado: " << ruleta[num][1] << std::endl; 
-
-    ruleta[num][1]= concursante.dinero;
-    cout << concursante.dinero; 
-        
+    std::cout << " Te a tocado: " << ruleta[num][1] <<"€"<< std::endl; 
+    ruleta2[num]=eur;
+    eur=eur+eur;
+    concursante.dinero=eur;
+    
          
 
 

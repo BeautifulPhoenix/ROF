@@ -19,14 +19,15 @@ string solucion [30];
 int num = rand() % 28; 
 int choise;
 int dado= rand() % 2;
-  
+int i;
+string cp;
 
 
 
 struct concursante
 {
 	char nom[15];
-	int dinero;
+	char dinero=0;
     int edat;
 };
 
@@ -35,18 +36,18 @@ int concursante(int argc, char *argv[]){
 
 
 
-struct concursante concursante;
+struct concursante Jugador;
 
 
 cout << "Dime el Nombre del concursante " << std::endl;
 
-cin >> concursante.nom;
+cout << Jugador.nom;
 
 std::cout << "Dime la edat" << std::endl;
 
-cin >> concursante.edat;
+cin >> Jugador.edat;
 
-std::cout << "Saldo actual:" << concursante.dinero <<"€" <<std::endl;
+std::cout << "Saldo actual:" << Jugador.dinero <<"€" <<std::endl;
 
 
 };
@@ -164,7 +165,10 @@ case 2:
 
 int partida(int valor, int frase){
 
-    std::cout <<" Bienvenido a la Ruleta de la Suerte " <<std::endl;
+    struct concursante concursante;
+
+
+    std::cout << concursante.nom <<" Bienvenido a la Ruleta de la Suerte " <<std::endl;
 
     cout << "La Pista Es: " <<endl;
     std::cout << " "<< Pista[dado] << std::endl;
@@ -197,6 +201,22 @@ do
 		std::cout << "0. Bancarrota" << std::endl;
         
 		cout<<"====================================================="<<endl;
+               // cout <<"Panel: "<< spanel[i] <<endl;
+        cout << "Saldo: "<< concursante.dinero <<endl;
+        cout << "Pista: "<< Pista[0] <<endl;
+        cout << "Panel:" <<endl;
+         cout << "  _ _ _ _ _ _ _ _ _ _ _ _ _ _"<<endl;
+        //cout <<"Solucion:  "<< solucion[i] <<endl;
+         for (size_t y= 0; y< 30; y++)
+    {
+
+        cout << " "<< solucion[y]; 
+
+    }//cout << " v" << i;
+
+    cout << endl;
+
+       i=i+1;
 		std::cin >> choise;
         switch (choise)
         {
@@ -209,69 +229,100 @@ do
     std::cout << "Giras la Ruleta" << std::endl;
     //int c = getchar();
     std::cout << "...... te a tocado la posicion: " << num<< std::endl;
-    std::cout << " Te a tocado: " << ruleta[num][1] << std::endl;        
+    std::cout << " Te a tocado: " << ruleta[num][1] << std::endl; 
+
+    ruleta[num][1]= concursante.dinero;
+    cout << concursante.dinero; 
+        
+         
+
+
         break;
 
         case 2:
-int i;
 
-        cin >> solucion[i];
+
+    cout<< "Que letra Quieres comprar?"<<endl; 
+
+        cin >> cp;
+
+        for (size_t z = 0; i < 14; z++)
+        {
+        if(cp.compare(spanel[z]) != 0){
+            cout <<" Esa letra NO existe en el panel GAME OVER"<<endl;
+
+
+        }
+
+
+        }
+        
+        
+
+        
+        
+        
+        //cin >> solucion[i];
        //std::getline(std::cin, solucion[1]);
 
-       cout << " v" << i;
     
            
-       // cout <<"Panel: "<< spanel[i] <<endl;
-        cout << "Panel:" <<endl;
-         cout << "  _ _ _ _ _ _ _ _ _ _ _ _ _ _"<<endl;
-        //cout <<"Solucion:  "<< solucion[i] <<endl;
-
-       i=i+1;
-
-    
-    for (size_t y= 0; y< 30; y++)
-    {
-
-        cout << " "<< solucion[y]; 
-
-    }
-    
-        
 
 
     
 
-
-
-
-
-            break;
+    
+                    break;
         
         case 3:
-
- /*               for (size_t y = 0; y < 15; y++)
+/*
+                for (size_t y = 0; y < 15; y++)
         {
+        
+        
 
         if ((solucion[y].compare(spanel[y])) == 0)
         {
 
                 cout << " Has hacertado la frase" <<endl;
 
-        }       } */
+        }       } 
         
 
 
 
-        if ((solucion[1].compare(spanel[1])) <0)
+        if ((solucion[1].compare(spanel[1])) !=0)
         {
-                cout << "Te has equibocado has perdido GAME OVER" <<endl;
+                cout << "Te has equivocado has perdido GAME OVER" <<endl;
 
         }
 
-            break;
+            */
+           break;
         
         case 4:
-            break;
+
+        solucion[0]={"E"};
+        solucion[3]={"O"};
+        solucion[5]={"E"};
+        solucion[8]={"E"};
+        solucion[11]={"A"};
+        solucion[13]={"O"};
+        
+
+
+        
+
+
+
+        break;
+
+        case 5:
+
+        cout << "Te has librado de una buena "<<endl;
+
+
+        break;
         
         default:
             break;

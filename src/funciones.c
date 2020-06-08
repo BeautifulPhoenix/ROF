@@ -10,8 +10,9 @@
 using namespace std;
 
 string panel[15];
-string spanel[2]= {"La Situacion desesperada de estar encerrado ", "El deseo de romper las cadenas y ser liberado"};
-string Pista [2]={"Confinamiento", "Estoy encerrado"};
+string rpanel[2]={"Estoy encerrado ",};
+string spanel[30]={"E","S", "T", "O", "Y", "E", "N", "C","E", "R", "R", "A", "D","O"};
+string Pista [2]={"Confinamiento"};
 string ruleta [28][1]= {"25€", "50€", "75€", "25€", "50€", "75€", "25€", "50€", "75€", "25€", "50€", "75€", "25€", "50€", "75€", "25€", "50€", "75€", "100€", "150€", "200€", "100€", "150€", "Bancarrota", "Comodin", "Todas las vocales", "X2", "1/2"};
 string solucion [30];
 //string ruleta [28][1];
@@ -204,15 +205,45 @@ do
         break;
 
         case 2:
+int i;
 
-        cin >> solucion[1];
+        cin >> solucion[i];
+       //std::getline(std::cin, solucion[1]);
 
-        if (solucion[1].compare(spanel[dado]) !=0)
+       cout << " " << i;
+
+       i=i+1;
+
+
+        for (size_t y = 0; y < 15; y++)
         {
 
-                cout << " Has perdido GAME OVER" <<endl;
+        if ((solucion[y].compare(spanel[y])) == 0)
+        {
 
-        }
+                cout << " Has hacertado la letra" <<endl;
+
+        }        }
+        
+
+
+
+        /*if ((solucion[1].compare(spanel[dado])) <0)
+        {
+                cout << "Te has equibocado has perdido GAME OVER" <<endl;
+
+        }*/
+        
+        cout <<solucion[i] << endl;
+
+    
+    for (size_t i = 0; i < 30; i++)
+    {
+
+        cout << " "<< solucion[i]; 
+
+    }
+    
         
 
 

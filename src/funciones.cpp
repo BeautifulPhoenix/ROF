@@ -11,7 +11,7 @@ using namespace std;
 
 string panel[15];
 string rpanel[2]={"Estoy encerrado "};
-string spanel[30]={"ESTOYENCERRADO"};//{"E","S", "T", "O", "Y", "E", "N", "C","E", "R", "R", "A", "D","O", "\0"};
+string spanel[30]=/*{"ESTOYENCERRADO"};*/{"E","S", "T", "O", "Y", "E", "N", "C","E", "R", "R", "A", "D","O", "\0"};
 string Pista [2]={"Confinamiento"};
 string ruleta [28][1]= {"25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "100", "150", "200", "100", "150", "Bancarrota", "Comodin", "Todas las vocales", "X2", "1/2"};
 string ruleta2 [28]{"25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "100", "150", "200", "100", "150"};
@@ -21,6 +21,8 @@ int num = rand() % 28;
 int choise;
 int dado= rand() % 2;
 int i;
+int z;
+
 string cp;
 int eur;
 
@@ -244,22 +246,41 @@ do
         break;
 
         case 2:
+    cout << "En que posicion quieres la letra a comprar?"<<endl;
 
-
+    cin >> z;
     cout<< "Que letra Quieres comprar?"<<endl; 
 
         cin >> cp;
 
-        for (size_t z = 0; i < 14; z++)
-        {
-        if(cp != spanel[z]){
+        //for (size_t z = 0; i < 14; z++)
+        //{
+    
+            if(cp != spanel[z]){
             cout <<" Esa letra NO existe en el panel GAME OVER"<<endl;
 
 
         }
+            else
+            {
 
 
-        }
+        solucion[z]=cp;
+                
+
+            }
+            
+
+
+
+       // if(cp != spanel[z]){
+      //      cout <<" Esa letra NO existe en el panel GAME OVER"<<endl;
+
+
+     //   }
+
+
+        //}
         
         
 

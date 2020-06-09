@@ -2,7 +2,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <time.h>
-#include "funciones.c"
+#include "funciones.cpp"
 #include "funcions.h"
 
 

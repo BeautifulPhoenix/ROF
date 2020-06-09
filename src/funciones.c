@@ -10,11 +10,11 @@
 using namespace std;
 
 string panel[15];
-string rpanel[2]={"Estoy encerrado ",};
-string spanel[30]={"E","S", "T", "O", "Y", "E", "N", "C","E", "R", "R", "A", "D","O"};
+string rpanel[2]={"Estoy encerrado "};
+string spanel[30]={"E","S", "T", "O", "Y", "E", "N", "C","E", "R", "R", "A", "D","O", "\0"};
 string Pista [2]={"Confinamiento"};
-string ruleta [28][1]= {"25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "100", "150", "200", "100", "150", "Bancarrota", "Comodin", "Todas las vocales", "X2", "1/2"};
-string ruleta2 [28]{"25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "100", "150", "200", "100", "150"};
+string ruleta [28][1]= {"25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "100", "150", "200", "100", "150", "Bancarrota", "Comodin", "Todas las vocales", "X2", "1/2", "\0"};
+string ruleta2 [28]{"25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "25", "50", "75", "100", "150", "200", "100", "150", "\0"};
 string solucion [30];
 //string ruleta [28][1];
 int num = rand() % 28; 
@@ -41,9 +41,9 @@ int concursante(int argc, char *argv[]){
 struct concursante Jugador;
 
 
-cout << "Dime el Nombre del concursante " << std::endl;
+cout << "Dime el Nombre del concursante "<<endl;
 
-cout << Jugador.nom;
+cin >> Jugador.nom;
 
 std::cout << "Dime la edat" << std::endl;
 
@@ -91,16 +91,18 @@ int npanel(int valor, int frase){
 
 
 
-    for (size_t i = 0; i < 15; i++)
+    for (size_t i = 0; i < 16; i++)
 {
 
-    std::cout <<"|"<<i<<"." << panel[i] <<"|"<< endl;
+    std::cout <<"|"<<i<<"." << rpanel[i] <<"|"<< endl;
+    cout <<"|" << panel[i]<<"|"<<endl;
 }
     for (size_t i = 0; i < 2; i++)
     {
         std::cout << "|" << spanel[i] << "|" << std::endl;
         
     }
+    
 };
 
 
@@ -250,7 +252,7 @@ do
 
         for (size_t z = 0; i < 14; z++)
         {
-        if(cp.compare(spanel[z]) != 0){
+        if(cp != spanel[z]){
             cout <<" Esa letra NO existe en el panel GAME OVER"<<endl;
 
 

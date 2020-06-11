@@ -25,7 +25,7 @@ int z;
 int comodin;
 
 string cp;
-int eur;
+int eur=0;
 
 
 
@@ -250,7 +250,6 @@ do
     
     //23 if para hacer funcinar el sistema de monetizacion comenzamos 
     // desde la posicion 0
-
     if (num !=0)
     {
 

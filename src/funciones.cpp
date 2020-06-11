@@ -201,9 +201,8 @@ do
         cout<<"====================================================="<<endl;
         std::cout << "1. Girar Ruleta" << std::endl;
 		std::cout << "2. Comprar letras" << std::endl;
-		std::cout << "3. Comprobar Respuesta" <<endl;
-        std::cout << "4. Todas las Vocales" << std::endl;
-		std::cout << "5. Usar Comodin" << std::endl;
+        std::cout << "3. Todas las Vocales" << std::endl;
+		std::cout << "4. Usar Comodin" << std::endl;
 		std::cout << "0. Bancarrota" << std::endl;
         
 		cout<<"====================================================="<<endl;
@@ -235,7 +234,7 @@ do
     std::cout << "Giras la Ruleta" << std::endl;
     //int c = getchar();
     std::cout << "...... te a tocado la posicion: " << num<< std::endl;
-    std::cout << " Te a tocado: " << ruleta[num][1] <<"€"<< std::endl; 
+    std::cout << " Te a tocado: " << ruleta[num][1] <<" €"<< std::endl; 
     ruleta2[num]=eur;
     eur=eur+eur;
     concursante.dinero=eur;
@@ -264,28 +263,17 @@ do
             else
             {
 
+        std::cout << "Letra CORRECTA! " << spanel[z] << std::endl;
+
 
         solucion[z]=cp;
-                
-
-            }
-            
-
-
-
+                     }    
        // if(cp != spanel[z]){
       //      cout <<" Esa letra NO existe en el panel GAME OVER"<<endl;
 
-
      //   }
 
-
-        //}
-        
-        
-
-        
-        
+        //}        
         
         //cin >> solucion[i];
        //std::getline(std::cin, solucion[1]);
@@ -299,50 +287,33 @@ do
     
                     break;
         
+        
         case 3:
-/*
-                for (size_t y = 0; y < 15; y++)
-        {
-        
-        
 
-        if ((solucion[y].compare(spanel[y])) == 0)
-        {
-
-                cout << " Has hacertado la frase" <<endl;
-
-        }       } 
-        
-
-
-
-        if ((solucion[1].compare(spanel[1])) !=0)
-        {
-                cout << "Te has equivocado has perdido GAME OVER" <<endl;
-
-        }
-
-            */
-           break;
-        
-        case 4:
-
+        // Todas las Vocales del 1r panel
+        // solo esta configurado para el primer panel 
+    if (num != 24)
+    {
+    std::cout << "" << std::endl;
+    std::cout << "No me seas tramposo no te a tocado el comodin" << std::endl;
+std::cout << "" << std::endl;
+ 
+            }
+    else
+    {
         solucion[0]={"E"};
         solucion[3]={"O"};
         solucion[5]={"E"};
         solucion[8]={"E"};
         solucion[11]={"A"};
         solucion[13]={"O"};
-        
-
-
-        
-
-
-
+    }
+    
         break;
 
-        case 5:
+        case 4:
+
+        //Falta configurar comodin
 
         cout << "Te has librado de una buena "<<endl;
 
@@ -352,11 +323,24 @@ do
         default:
             break;
         }
+} while (choise !=0 && num !=22);
 
+if (num != 22)
+{
 
+    //el primer COUTnunca se acctiva  solo se activa el segundo cuando sale num=22 es decir Bancarrota
 
+    std::cout << "Ha salido Bancarrota que lastima... has perdido GAME OVER volviendo al Menu" << std::endl;
 
-} while (choise !=0);
+}
+
+else
+{
+    std::cout << "" << std::endl;
+    std::cout << "Ha salido Bancarrota que lastima... has perdido GAME OVER volviendo al Menu" << std::endl;
+    std::cout << "" << std::endl;
+}
+
 
 
 

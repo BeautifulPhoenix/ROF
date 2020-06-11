@@ -145,7 +145,7 @@ case 2:
 
     for (int i= 0; i< 28; i++)
     {
-        std::cout << "|"<< ruleta[i][1] << "|"<< std::endl;
+        std::cout << i << ". |"<< ruleta[i][1] << "|"<< std::endl;
 
         
     }
@@ -236,8 +236,6 @@ do
     //int c = getchar();
     std::cout << "...... te a tocado la posicion: " << num<< std::endl;
     std::cout << " Te a tocado: " << ruleta[num][1] <<" €"<< std::endl; 
-    ruleta2[num]=eur;
-    eur=eur+eur;
     concursante.dinero=eur;
     //if para contabilizar el comodin
     if (num !=23)
@@ -255,219 +253,267 @@ do
 
     if (num !=0)
     {
-        
+
+
+
     }
     else
     {
     
-    eur=
+    eur=eur+50;
         
     }
     
 
 
-/* 
-
-
-     if ()
+     if (num !=1)
     {
         
     }
     else
     {
+
+        eur=eur+75;
         
     }
 
-        if ()
+    
+
+        if (num !=2)
     {
         
     }
     else
     {
+
+        eur=eur+25;
         
     }
 
-        if ()
+        if (num !=3)
     {
         
     }
     else
     {
+        eur=eur+50;
+        
+    }
+    
+   
+
+        if (num !=4)
+    {
+        
+        
+    }
+    else
+    {
+
+        eur=eur+75;
         
     }
 
-        if ()
+     
+
+        if (num !=5)
     {
         
     }
     else
     {
+        eur=eur+25;
         
     }
 
-        if ()
+    
+
+        if (num !=6)
     {
         
     }
     else
     {
+        eur=eur+50;
+
         
     }
 
-        if ()
+   
+
+        if (num !=7)
     {
         
     }
     else
     {
-        
+       eur=eur+75; 
     }
+     
 
-        if ()
+        if (num !=8)
     {
         
     }
     else
     {
+
+        eur=eur+25;
         
     }
+    
 
-        if ()
+        if (num !=9)
     {
         
     }
     else
     {
+
+        eur=eur+50;
         
     }
 
-        if ()
+        if (num !=10)
     {
         
     }
     else
     {
+        eur=eur+75;
         
     }
 
-        if ()
+        if (num !=11)
     {
         
     }
     else
     {
-        
+        eur=eur+25;
     }
 
-        if ()
+        if (num !=12)
     {
         
     }
     else
     {
-        
+        eur=eur+50;        
     }
 
-        if ()
+        if (num !=13)
     {
         
     }
     else
     {
+        eur=eur+75;
         
     }
 
-        if ()
+        if (num !=14)
     {
         
     }
     else
     {
-        
+        eur=eur+25;
     }
 
-        if ()
+        if (num !=15)
+    {
+
+    }
+    else
+    {
+        eur=eur+50;
+
+    }
+
+        if (num !=16)
+    {
+
+    }
+    else
+    {
+         eur=eur+75;
+
+    }
+
+        if (num !=17)
     {
         
     }
     else
     {
-        
+        eur=eur+100;
     }
 
-        if ()
+        if (num !=18)
     {
         
     }
     else
     {
-        
+        eur=eur+150;
     }
 
-        if ()
+        if (num !=19)
     {
         
     }
     else
     {
-        
+        eur=eur+200;
     }
 
-        if ()
+        if (num !=20)
     {
         
     }
     else
     {
-        
+        eur=eur+100;
     }
 
-        if ()
+        if (num !=21)
     {
         
     }
     else
     {
-        
+        eur=eur+21;
     }
 
-        if ()
+        if (num !=25)
     {
         
     }
     else
     {
-        
+        eur=eur*2;
     }
 
-        if ()
+    if (num !=26)
     {
-        
+        /* code */
     }
     else
     {
-        
+        eur=eur/2;
     }
 
-        if ()
+    if (num != 27)
     {
-        
+        /* code */
     }
     else
     {
-        
+        eur=eur+25;
     }
-
-        if ()
-    {
-        
-    }
-    else
-    {
-        
-    }
-
-    */
+    
+    
 
     
     

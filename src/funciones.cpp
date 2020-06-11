@@ -189,10 +189,10 @@ int partida(int valor, int frase){
     std::cout << " Te a tocado: " << ruleta[num][1] <<"€"<< std::endl;*/
 do
 {
-      if (num == 22)
+   /*   if (num == 22)
     {
         choise==0;
-    }
+    } */
     
 
     cout <<"Que quieres hacer?"<< endl;

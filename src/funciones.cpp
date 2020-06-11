@@ -22,6 +22,7 @@ int choise;
 int dado= rand() % 2;
 int i;
 int z;
+int comodin;
 
 string cp;
 int eur;
@@ -202,12 +203,12 @@ do
         std::cout << "1. Girar Ruleta" << std::endl;
 		std::cout << "2. Comprar letras" << std::endl;
         std::cout << "3. Todas las Vocales" << std::endl;
-		std::cout << "4. Usar Comodin" << std::endl;
 		std::cout << "0. Bancarrota" << std::endl;
         
 		cout<<"====================================================="<<endl;
                // cout <<"Panel: "<< spanel[i] <<endl;
         cout << "Saldo: "<< concursante.dinero << eur<<"€"<<endl;
+        std::cout << "Comodines:" << comodin<< std::endl;
         cout << "Pista: "<< Pista[0] <<endl;
         cout << "Panel:" <<endl;
          cout << "  _ _ _ _ _ _ _ _ _ _ _ _ _ _"<<endl;
@@ -238,6 +239,17 @@ do
     ruleta2[num]=eur;
     eur=eur+eur;
     concursante.dinero=eur;
+    if (num !=23)
+    {
+        //comodin=comodin=1;
+
+    }
+    else
+    {
+        comodin=comodin+1;
+    }
+    
+    
     
          
 
@@ -257,6 +269,20 @@ do
     
             if(cp != spanel[z]){
             cout <<" Esa letra NO existe en el panel GAME OVER"<<endl;
+            if (comodin !=1)
+            {
+                                num =22;
+
+            }
+            else
+            {
+            std::cout << "Has perdido pero tienes comodin " << std::endl;
+
+            comodin=0;
+
+            }
+            
+            
 
 
         }
@@ -276,16 +302,8 @@ do
         //}        
         
         //cin >> solucion[i];
-       //std::getline(std::cin, solucion[1]);
-
-    
-           
-
-
-    
-
-    
-                    break;
+       //std::getline(std::cin, solucion[1]);    
+        break;
         
         
         case 3:
@@ -309,17 +327,7 @@ std::cout << "" << std::endl;
         solucion[13]={"O"};
     }
     
-        break;
-
-        case 4:
-
-        //Falta configurar comodin
-
-        cout << "Te has librado de una buena "<<endl;
-
-
-        break;
-        
+        break;      
         default:
             break;
         }
@@ -328,16 +336,16 @@ std::cout << "" << std::endl;
 if (num != 22)
 {
 
-    //el primer COUTnunca se acctiva  solo se activa el segundo cuando sale num=22 es decir Bancarrota
+    //el primer COUT no se acctiva  solo se activa el segundo cuando sale num=22 es decir Bancarrota
 
-    std::cout << "Ha salido Bancarrota que lastima... has perdido GAME OVER volviendo al Menu" << std::endl;
+    std::cout << "Que lastima... has perdido GAME OVER volviendo al Menu" << std::endl;
 
 }
 
 else
 {
     std::cout << "" << std::endl;
-    std::cout << "Ha salido Bancarrota que lastima... has perdido GAME OVER volviendo al Menu" << std::endl;
+    std::cout << "Que lastima... has perdido GAME OVER volviendo al Menu" << std::endl;
     std::cout << "" << std::endl;
 }
 

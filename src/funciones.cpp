@@ -239,6 +239,7 @@ do
     ruleta2[num]=eur;
     eur=eur+eur;
     concursante.dinero=eur;
+    //if para contabilizar el comodin
     if (num !=23)
     {
         //comodin=comodin=1;
@@ -248,6 +249,226 @@ do
     {
         comodin=comodin+1;
     }
+    
+    //23 if para hacer funcinar el sistema de monetizacion comenzamos 
+    // desde la posicion 0
+
+    if (num !=0)
+    {
+        
+    }
+    else
+    {
+    
+    eur=
+        
+    }
+    
+
+
+/* 
+
+
+     if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+        if ()
+    {
+        
+    }
+    else
+    {
+        
+    }
+
+    */
+
     
     
     

@@ -249,7 +249,7 @@ do
         comodin=comodin+1;
     }
     
-    //23 if para hacer funcinar el sistema de monetizacion comenzamos 
+    //23 if + el X2 y el 1/2 para hacer funcinar el sistema de monetizacion comenzamos 
     // desde la posicion 0
     if (num !=0)
     {
@@ -541,6 +541,8 @@ do
     cout<< "Que letra Quieres comprar?"<<endl; 
 
         cin >> cp;
+
+        // lo suyo seria hacer un bucle de tal manera que pillara cualquier letra de cualquier posicion pero al hacerlo con el for el programa peta
 
         //for (size_t z = 0; i < 14; z++)
         //*{

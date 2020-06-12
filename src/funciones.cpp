@@ -23,6 +23,7 @@ int dado= rand() % 2;
 int i;
 int z;
 int comodin;
+int vocal;
 
 string cp;
 
@@ -510,6 +511,17 @@ do
     {
         eur=eur+25;
     }
+    if (num !=24)
+    {
+        /* code */
+    }
+    else
+    {
+
+        vocal=1;
+
+    }
+    
     
     
     concursante.dinero=eur;
@@ -531,7 +543,7 @@ do
         cin >> cp;
 
         //for (size_t z = 0; i < 14; z++)
-        //{
+        //*{
     
             if(cp != spanel[z]){
             cout <<" Esa letra NO existe en el panel GAME OVER"<<endl;
@@ -546,11 +558,7 @@ do
 
             comodin=0;
 
-            }
-            
-            
-
-
+            } 
         }
             else
             {
@@ -576,7 +584,7 @@ do
 
         // Todas las Vocales del 1r panel
         // solo esta configurado para el primer panel 
-    if (num != 24)
+    if (vocal != 1)
     {
     std::cout << "" << std::endl;
     std::cout << "No me seas tramposo no te a tocado el comodin" << std::endl;

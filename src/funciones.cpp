@@ -205,7 +205,7 @@ do
         std::cout << "1. Girar Ruleta" << std::endl;
 		std::cout << "2. Comprar letras" << std::endl;
         std::cout << "3. Todas las Vocales" << std::endl;
-		std::cout << "0. Bancarrota" << std::endl;
+		std::cout << "0. Salir " << std::endl;
         
 		cout<<"====================================================="<<endl;
                // cout <<"Panel: "<< spanel[i] <<endl;

@@ -25,6 +25,7 @@ int z;
 int comodin;
 
 string cp;
+
 int eur=0;
 
 
@@ -252,7 +253,6 @@ do
     // desde la posicion 0
     if (num !=0)
     {
-
 
 
     }
@@ -505,7 +505,7 @@ do
 
     if (num != 27)
     {
-        /* code */
+        
     }
     else
     {

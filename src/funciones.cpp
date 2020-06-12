@@ -208,7 +208,7 @@ do
         
 		cout<<"====================================================="<<endl;
                // cout <<"Panel: "<< spanel[i] <<endl;
-        cout << "Saldo: "<< concursante.dinero << eur<<"€"<<endl;
+            cout << "Saldo: "<< concursante.dinero <<"€"<<endl;
         std::cout << "Comodines:" << comodin<< std::endl;
         cout << "Pista: "<< Pista[0] <<endl;
         cout << "Panel:" <<endl;
@@ -237,7 +237,6 @@ do
     //int c = getchar();
     std::cout << "...... te a tocado la posicion: " << num<< std::endl;
     std::cout << " Te a tocado: " << ruleta[num][1] <<" €"<< std::endl; 
-    concursante.dinero=eur;
     //if para contabilizar el comodin
     if (num !=23)
     {
@@ -513,6 +512,7 @@ do
     }
     
     
+    concursante.dinero=eur;
 
     
     

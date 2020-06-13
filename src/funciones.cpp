@@ -103,6 +103,7 @@ std::cout << "Dime La pista del panel" << std::endl;
 cin >> pistap;
 
 
+
 //cout << std::find_first_of(panel[i].begin(), panel[i].end(), v.begin(), v.end());
 
 
@@ -118,12 +119,14 @@ cin >> pistap;
     for (size_t i = 0; i < 16; i++)
 {
 
-    std::cout <<"|"<<i<<"." << rpanel[i] <<"|"<< endl;
-    cout <<"|" << panel[i]<<"|"<<endl;
+    std::cout << rpanel[i] <<endl;
+    cout << panel[i];
 }
-    for (size_t i = 0; i < 2; i++)
+    std::cout << "" << std::endl;
+
+    for (size_t i = 0; i < cnt; i++)
     {
-        std::cout << "|" << spanel[i] << "|" << std::endl;
+        std::cout <<  spanel[i];
         
     }
     
@@ -654,7 +657,7 @@ num=22;
         
         
         case 3:
-
+        // No esta configurado para funcionar en el panel personalizado
         // Todas las Vocales del 1r panel
         // solo esta configurado para el primer panel 
     if (vocal != 1)
@@ -666,12 +669,14 @@ std::cout << "" << std::endl;
             }
     else
     {
-        solucion[0]={"E"};
-        solucion[3]={"O"};
-        solucion[5]={"E"};
-        solucion[8]={"E"};
-        solucion[11]={"A"};
-        solucion[13]={"O"};
+
+        std::cout << "No funciona para panel personalizado" << std::endl;
+     //   solucion[0]={"E"};
+     //   solucion[3]={"O"};
+    //    solucion[5]={"E"};
+     //   solucion[8]={"E"};
+     //   solucion[11]={"A"};
+     //   solucion[13]={"O"};
     }
     
         break;      

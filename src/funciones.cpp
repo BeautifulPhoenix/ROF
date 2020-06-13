@@ -535,19 +535,22 @@ do
         break;
 
         case 2:
-    cout << "En que posicion quieres la letra a comprar?"<<endl;
+  
+    
+    /*
+    //cout << "En que posicion quieres la letra a comprar?"<<endl;
 
-    cin >> z;
+    //cin >> z;
     cout<< "Que letra Quieres comprar?"<<endl; 
 
         cin >> cp;
 
         // lo suyo seria hacer un bucle de tal manera que pillara cualquier letra de cualquier posicion pero al hacerlo con el for el programa peta
 
-        //for (size_t z = 0; i < 14; z++)
-        //*{
+        for (size_t z = 0; z < 14; z++)
+        {
     
-            if(cp != spanel[z]){
+            if(spanel[z].find(cp) > 0){
             cout <<" Esa letra NO existe en el panel GAME OVER"<<endl;
             if (comodin !=1)
             {
@@ -569,16 +572,88 @@ do
 
 
         solucion[z]=cp;
-                     }    
-       // if(cp != spanel[z]){
-      //      cout <<" Esa letra NO existe en el panel GAME OVER"<<endl;
+                     }
 
-     //   }
+        }  
+*/
 
-        //}        
+
+cout << "Dime  la Letra " <<endl;
+cin >> cp;
+
+if (spanel[z].find(z)>0)
+{
+
+    for (size_t z = 0; z < spanel[z].length(); z++)
+    {
+        if (spanel[z]==cp)
+        {
+            solucion[z]=cp;
+            cout << "Letra CORRECTA" << spanel[z]<<endl;
+        }
         
-        //cin >> solucion[i];
-       //std::getline(std::cin, solucion[1]);    
+        else
+        {
+        std::cout << "Esa Letra NO existe en el panel" << std::endl;
+
+            if (comodin==0)
+            {
+                std::cout << "GAME OVER" << std::endl;
+                num=22;
+            }else
+            {
+                std::cout << "Has Perdido el comodin" << std::endl;
+                comodin=0;
+            }
+            
+            
+        }
+        
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
         break;
         
         

@@ -28,6 +28,8 @@ int vocal;
 string cp;
 
 int eur=0;
+bool encontrado=false;
+
 
 
 
@@ -581,38 +583,45 @@ do
 cout << "Dime  la Letra " <<endl;
 cin >> cp;
 
-if (spanel[z].find(z)>0)
+encontrado=0;
+
+for (size_t z = 0; z < 14; z++)
 {
 
-    for (size_t z = 0; z < spanel[z].length(); z++)
-    {
-        if (spanel[z]==cp)
-        {
-            solucion[z]=cp;
-            cout << "Letra CORRECTA" << spanel[z]<<endl;
-        }
-        
-        else
-        {
-        std::cout << "Esa Letra NO existe en el panel" << std::endl;
+if (spanel[z]==cp)
+{
+    encontrado=1;
+    solucion[z]=cp;
+}
 
-            if (comodin==0)
-            {
-                std::cout << "GAME OVER" << std::endl;
-                num=22;
-            }else
-            {
-                std::cout << "Has Perdido el comodin" << std::endl;
-                comodin=0;
-            }
-            
-            
-        }
-        
-    }
-    
+if (encontrado=1)
+{
+    std::cout << "Letra CORRECTA!" << std::endl;
+}else
+{
+std::cout << "Esa letra NO existe en el panel." << std::endl;
+if (comodin==0)
+{
+
+std::cout << "GAME OVER" << std::endl;
+
+num=22;
+
+}else
+{
+    std::cout << "Has perdido el comodin" << std::endl;
+    comodin=0;
+}
+
 
 }
+
+
+
+
+}
+
+
 
 
 

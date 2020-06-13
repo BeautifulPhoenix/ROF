@@ -34,6 +34,7 @@ string cp;
 int eur=0;
 bool encontrado=false;
 int g;
+string v="aeiou";
 
 
 
@@ -83,18 +84,27 @@ int npanel(int valor, int frase){
     // La primera posicion a introducir no funciona de 5 -> solo 4 
 
     std::cout << "Dime La longitud del Panel" << std::endl;
+    
     cin >>cnt;
+    fflush(stdin);
 
 std::cout << "Dime El panel k kieres introducir letra por letra" << std::endl;
+    std::getline(std::cin, panel[0]);
+
     for (size_t i = 0; i < cnt; i++)
     {
-    std::cout << "Dime el nuevos panel a introducir:" << std::endl;
     std::getline(std::cin, panel[i]);
+    std::cout << "Dime la siguiente letra:" << std::endl;
+    
     }
     
 
 std::cout << "Dime La pista del panel" << std::endl;
 cin >> pistap;
+
+
+//cout << std::find_first_of(panel[i].begin(), panel[i].end(), v.begin(), v.end());
+
 
 
 
@@ -617,6 +627,7 @@ if (panel[z]==cp)
     solucion[z]=cp;
 }
 
+}
 if (encontrado==1)
 {
     std::cout << "Letra CORRECTA!" << std::endl;
@@ -635,11 +646,6 @@ num=22;
     std::cout << "Has perdido el comodin" << std::endl;
     comodin=0;
 }
-
-
-}
-
-
 
 
 }
@@ -1101,6 +1107,8 @@ if (spanel[z]==cp)
     solucion[z]=cp;
 }
 
+
+}
 if (encontrado==1)
 {
     std::cout << "Letra CORRECTA!" << std::endl;
@@ -1118,7 +1126,6 @@ num=22;
 {
     std::cout << "Has perdido el comodin" << std::endl;
     comodin=0;
-}
 }
 }
 

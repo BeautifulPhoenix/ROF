@@ -1,6 +1,9 @@
 using namespace std;
 
-int concursante(int argc, char *argv[]);
+void concursante(int argc, char *argv[]);
 void dpanel(int valor, int frase);
-int npanel(int valor, int frase);
-int mpanel(int valor, int frase);
+void npanel(int valor, int frase);
+void mpanel(int valor, int frase);
+void ipartida (int valor, int frase);
+void partida(int valor, int frase);
+
